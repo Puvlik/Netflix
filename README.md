@@ -57,7 +57,7 @@ Splash → Onboarding (первый запуск) → Auth (Login / Register)
   <summary>Смотреть скриншоты Splash</summary>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/602791d1-6aa0-4d06-b366-76c362c706e8" width="200" alt="Экран Splash">
+  <img src="Screenshots/Splash.png" width="200" alt="Экран Splash">
 </p>
 </details>
 
@@ -68,8 +68,8 @@ Splash → Onboarding (первый запуск) → Auth (Login / Register)
   <summary>Смотреть скриншоты Onboarding</summary>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/59709a96-5470-4173-9e2d-b6996722a537" width="200" alt="Экран Onboarding №1">
-    <img src="https://github.com/user-attachments/assets/67bdf163-23f7-4476-bb2e-fd7dfad4904a" width="200" alt="Экран Onboarding №2">
+  <img src="Screenshots/Onboarding1.png" width="200" alt="Экран Onboarding №1">
+  <img src="Screenshots/Onboarding2.png" width="200" alt="Экран Onboarding №2">
 </p>
 </details>
 
@@ -80,8 +80,8 @@ Splash → Onboarding (первый запуск) → Auth (Login / Register)
   <summary>Смотреть скриншоты Login/Register</summary>
   
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/603d14e0-be69-47b7-a10a-e6fb0172052c" width="200" alt="Экран Login">
-  <img src="https://github.com/user-attachments/assets/8e846666-dfd1-4d83-9416-cb360c6ee48b" width="200" alt="Экран Register">
+  <img src="Screenshots/Login.png" width="200" alt="Экран Login">
+  <img src="Screenshots/Register.png" width="200" alt="Экран Register">
 </p>
 </details>
 
@@ -92,7 +92,7 @@ Splash → Onboarding (первый запуск) → Auth (Login / Register)
   <summary>Смотреть скриншоты Home</summary>
   
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/46b20b33-4043-489d-8b79-69d1e2c1edfd" width="200" alt="Экран Home">
+  <img src="Screenshots/Home.png" width="200" alt="Экран Home">
 </p>
 </details>
 
@@ -103,7 +103,7 @@ Splash → Onboarding (первый запуск) → Auth (Login / Register)
   <summary>Смотреть скриншоты Coming Soon</summary>
   
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e2fa37c8-0a0b-4d68-a41b-3a16a9f87bb5" width="200" alt="Экран Coming Soon">
+  <img src="Screenshots/ComingSoon.png" width="200" alt="Экран Coming Soon">
 </p>
 </details>
 
@@ -114,7 +114,7 @@ Splash → Onboarding (первый запуск) → Auth (Login / Register)
   <summary>Смотреть скриншоты Favorites</summary>
   
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3439a8ba-8758-46bc-ade8-ba28596efa43" width="200" alt="Экран Favorites">
+  <img src="Screenshots/Favorites.png" width="200" alt="Экран Favorites">
 </p>
 </details>
 
@@ -125,7 +125,7 @@ Splash → Onboarding (первый запуск) → Auth (Login / Register)
   <summary>Смотреть скриншоты Movie Details</summary>
   
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0702e0dd-6ab1-43ce-a62b-5a7f2a38c831" width="200" alt="Экран Movie Details">
+  <img src="Screenshots/MovieDetails.png" width="200" alt="Экран Movie Details">
 </p>
 </details>
 
@@ -136,7 +136,7 @@ Splash → Onboarding (первый запуск) → Auth (Login / Register)
   <summary>Смотреть скриншоты Profile</summary>
   
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ce9e81de-54eb-4af0-bc30-eaad8a5bd079" width="200" alt="Экран Profile">
+  <img src="Screenshots/Profile.png" width="200" alt="Экран Profile">
 </p>
 </details>
 
@@ -147,7 +147,7 @@ Splash → Onboarding (первый запуск) → Auth (Login / Register)
   <summary>Смотреть скриншоты No Network</summary>
   
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/55ac58a7-1956-46e4-94f0-6323f0fb218a" width="200" alt="Экран Profile">
+  <img src="Screenshots/NoNetwork.png" width="200" alt="Экран Profile">
 </p>
 </details>
 
