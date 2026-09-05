@@ -71,6 +71,7 @@ Splash → Onboarding (первый запуск) → Auth (Login / Register)
   <img src="https://github.com/user-attachments/assets/59709a96-5470-4173-9e2d-b6996722a537" width="200" alt="Экран Onboarding №1">
     <img src="https://github.com/user-attachments/assets/67bdf163-23f7-4476-bb2e-fd7dfad4904a" width="200" alt="Экран Onboarding №2">
 </p>
+</details>
 
 ### 🔐 Login / Register — UIKit
 *Технологии:* `UIKit` · `Firebase Auth` · `MVVM+C`
