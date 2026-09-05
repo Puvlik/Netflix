@@ -1,0 +1,32 @@
+xcassets:
+  inputs:
+    - NetflixApp/SupportingFiles/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: NetflixApp/SupportingFiles/Generated/Assets.swift
+      params:
+        enumName: Assets
+        forceProvidesNamespaces: true
+
+strings:
+  inputs: NetflixApp/SupportingFiles/en.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output: NetflixApp/SupportingFiles/Generated/Strings.swift
+      params:
+        enumName: Strings
+
+files:
+  inputs:
+    - NetflixApp/SupportingFiles/LottieAnimations
+  outputs:
+    templateName: flat-swift5
+    output: NetflixApp/SupportingFiles/Generated/Files.swift
+
+plist:
+  inputs: NetflixApp/SupportingFiles/Secrets.plist
+  outputs:
+    templateName: inline-swift5
+    output: NetflixApp/SupportingFiles/Generated/Secrets.swift
+    params:
+      enumName: Secrets

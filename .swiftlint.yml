@@ -1,0 +1,210 @@
+disabled_rules:
+  - superfluous_disable_command
+  - trailing_whitespace # Lines should not have trailing whitespace.
+  - netflix_void_return # Returning Void in a function declaration is redundant.
+  - force_unwrapping # Force unwrapping should be avoided.
+  - blanket_disable_command # Force to quite swiftlint:disable all
+
+opt_in_rules:
+  - closure_end_indentation # Closure end should have the same indentation as the line that started it.
+  - closure_spacing # Closure expressions should have a single space inside each brace.
+  - operator_usage_whitespace # Operators should be surrounded by a single whitespace when they are being used.
+  - explicit_init # Explicitly calling .init() should be avoided.
+  - first_where # Prefer using .first(where:) over .filter { }.first in collections.
+  - multiline_parameters # Functions and methods parameters should be either on the same line, or one per line.
+  - redundant_nil_coalescing # nil coalescing operator is only evaluated if the lhs is nil, coalescing operator with nil as rhs is redundant
+  - single_test_class # Test files should contain a single QuickSpec or XCTestCase class.
+  - sorted_imports # Imports should be sorted.
+  - switch_case_on_newline # Cases inside a switch should always be on a newline
+  - unneeded_parentheses_in_closure_argument # Parentheses are not needed when declaring closure arguments.
+#  - implicitly_unwrapped_optional # Implicitly unwrapped optionals should be avoided when possible.
+#  - private_outlet # IBOutlets should be private to avoid leaking UIKit to higher layers.
+#  - overridden_super_call # Some overridden methods should always call super
+
+#Исключаем поды из проверки
+excluded:
+  - vendor
+  - Pods
+
+#Будет ошибка, если варнингов будет более 300 (правило временно отключено)
+#warning_threshold: 300
+
+identifier_name:
+  min_length: 1
+  max_length: 60
+
+#Настройка максимального размера класса
+type_body_length:
+  warning: 600
+  error: 800
+
+#Настройка максимального количества символов в строке, если это не URL или комментарий (в идеале значения надо снизить)
+line_length:
+  warning: 120
+  error: 120
+  ignores_urls: true
+  ignores_comments: true
+
+#Настройка максимального размера метода
+function_body_length:
+  warning: 40
+  error: 140
+
+#Настройка максимального количества параметров метода
+function_parameter_count:
+  warning: 10
+  error: 10
+
+#Настройка максимального количества параметров в кортеже
+large_tuple:
+  warning: 5
+  error: 5
+
+#Настройка цикломатической сложности
+cyclomatic_complexity:
+  warning: 10
+  error: 40
+
+#Настройка максимальной длины имени
+type_name:
+  max_length:
+    warning: 60
+    error: 100
+
+#Будет ошибка при принудительном касте типов
+force_cast:
+  error
+
+#Будет ошибка при излишних скобках
+control_statement:
+  error
+
+#Будет ошибка при лишнем указании getter-a
+implicit_getter:
+  error
+
+#Будет ошибка, если параметры метода расположены вертикально и не из одной табуляции
+vertical_parameter_alignment:
+  error
+
+#Будет ошибка при отсутствии нужных пробелов при указании возвращаемого значения
+return_arrow_whitespace:
+  error
+
+#Будет ошибка при указании уточненных типов массивов и словарей в устаревших форматах
+syntactic_sugar:
+  error
+
+#Будет ошибка при неиспользовании for_where, когда это возможно
+for_where:
+  error
+
+#Будет ошибка при неверном написании кейсов
+switch_case_on_newline:
+  error
+
+custom_rules:
+  netflix_void_return:
+    name: "Неверное использование Void"
+    regex: "([(](Void)?[)] ?-> ?Void)"
+    match_kinds:
+      - typeidentifier
+    message: "Используй '() -> ()'"
+    severity: error
+
+  netflix_empty_string:
+    name: "Неверная проверка строки на пустоту"
+    regex: "( == \"\")|(== \"\")|( ==\"\")|(==\"\")|( != \"\")|(!= \"\")|( !=\"\")|(!=\"\")"
+    message: "Используй 'string.isEmpty'"
+    severity: error
+
+  netflix_guard_self:
+    name: "Неверное использование guard let self = self"
+    regex: "guard\\s+let\\s+(((?!self).)\\S* = self[ ,]|`self` = self)"
+    message: "Используй 'guard let self = self'"
+    severity: error
+
+  netflix_private_IBAction:
+    name: "IBActions должны быть приватными"
+    regex: "@IBAction func"
+    message: "Пиши @IBAction private func"
+    severity: error
+
+  netflix_types_String:
+    name: "Лишнее указание типа"
+    regex: "^(?!@IBInspectable)\\s*(var|let)\\s\\w*: String = \""
+    message: "Не указывай тип"
+    severity: error
+
+  netflix_types_Int:
+    name: "Лишнее указание типа"
+    regex: "^(?!@IBInspectable)\\s*(var|let)\\s\\w*: Int = \\d"
+    message: "Не указывай тип"
+    severity: error
+
+  netflix_types_Bool:
+    name: "Лишнее указание типа"
+    regex: "^(?!@IBInspectable)\\s*(var|let)\\s\\w*: Bool = (true|false)$"
+    message: "Не указывай тип"
+    severity: error
+
+  netflix_types_Double:
+    name: "Лишнее указание типа"
+    regex: "^(?!@IBInspectable)\\s*(var|let)\\s\\w*: Double = \\d"
+    message: "Не указывай тип"
+    severity: error
+
+  netflix_types_Date:
+    name: "Лишнее указание типа"
+    regex: "(var|let) \\w*: Date = Date\\("
+    message: "Не указывай тип"
+    severity: error
+
+  netflix_array_Type:
+    name: "Неверное создание массива"
+    regex: "((var|let) \\w*: \\[\\w*\\] = \\[\\])"
+    message: "var a: [Type] = []"
+    severity: error
+
+  netflix_private_IBOutlet:
+    name: "Аутлеты должны быть приватными"
+    regex: "(@IBOutlet weak|@IBOutlet var)"
+    message: "Пиши @IBOutlet private var"
+    severity: error
+
+  netflix_boolean_redundant_condition:
+    name: "Optional chaining для Bool не рекомендовано"
+    regex: '(\?\? true)|(\?\? false)'
+    message: "Используй == true или == false"
+    severity: error
+
+  vboolean_clear_condition:
+    name: "Переусложненное условие"
+    regex: "^(?>(?!(as\\?)|(\\?.)).)*((!= true)|(!= false)).*$"
+    message: "Используй == true или == false или саму перменную в качестве условия"
+    severity: error
+
+  netflix_boolean_in_ternar_return:
+    name: "Возврат Bool из тернарного оператора"
+    regex: "\\? (true : false)|(false : true)"
+    message: "Не используй тернарный оператор для возврата Bool"
+    severity: error
+    
+  netflix_unowned:
+    name: "Использование unowned"
+    regex: "\\[unowned "
+    message: "Используй 'weak' вместо 'unowned'"
+    severity: error
+
+  netflix_type_inferred_context:
+    name: "Лишнее указание типа"
+    regex: "^\\w* *((var)|(let)) \\w+\\:\\s(\\w+)\\s\\=\\s\\4"
+    message: "var a = Class()"
+    severity: error
+
+  netflix_type_inferred_context2:
+    name: "Лишнее указание типа"
+    regex: "^(?>(?!(\\w* *((var)|(let)) \\w+))).*: (\\w+) = \\5\\.(\\w+)(?>(?!\\(\\)))"
+    message: "func f(a: UIColor = .red)"
+    severity: error
+

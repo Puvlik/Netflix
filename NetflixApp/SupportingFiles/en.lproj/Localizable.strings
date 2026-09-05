@@ -1,0 +1,151 @@
+// MARK: - Common
+"common.emptyString" = "";
+"common.stringWithSpaceCharacter" = " ";
+"common.okButtonTitle" = "OK";
+"common.tryAgainButtonTitle" = "Try Again";
+"common.cancelButtonTitle" = "Cancel";
+"common.deleteButtonTitle" = "DELETE";
+"common.clearButtonTitle" = "Clear";
+
+// MARK: - Onboarding flow
+"onboarding.firstTitle" = "Trying to join NetflixDB?";
+"onboarding.firstBody" = "You can’t sign up for Netflix in the app. We know it’s a hassle. After you’re a member, you can start watching in the app. \nScroll > to learn more";
+"onboarding.secondTitle" = "That’s right!";
+"onboarding.secondBody" = "Please go to the movieDB website and create an account";
+"onboarding.signInButton" = "SIGN IN";
+"onboarding.signUpButton" = "SIGN UP";
+
+// MARK: - Auth flow
+"auth.showPasswordButtonTitle" = "SHOW";
+"auth.hidePasswordButtonTitle" = "HIDE";
+"auth.usernameFieldPlaceholder" = "Username";
+"auth.emailFieldPlaceholder" = "Email";
+"auth.passwordFieldPlaceholder" = "Password";
+"auth.confirmPasswordFieldPlaceholder" = "Confirm password";
+"auth.loginButtonTitle" = "Login";
+"auth.registerButtonTitle" = "Register";
+"auth.invalidUsernameError" = "Username must be at least 2 characters";
+"auth.emptyEmailError" = "Email cannot be empty";
+"auth.invalidEmailError" = "Please enter a valid email address";
+"auth.emptyPasswordError" = "Password cannot be empty";
+"auth.invalidPasswordError" = "Password must be at least 8 characters";
+"auth.emptyConfirmPasswordError" = "Confirm Password cannot be empty";
+"auth.passwordsNotMatchingError" = "Passwords don't match";
+
+// MARK: - Home tab (Dashboard)
+"homeTab.playButtonTitle" = "Play";
+"homeTab.likeButtonTitle" = "Like";
+"homeTab.unlikeButtonTitle" = "Unlike";
+"homeTab.popularMoviesSectionTitle" = "Popular Movies";
+"homeTab.failedToLoadPopularMoviesAlertTitle" = "Failed to load Popular Movies";
+"homeTab.moviesUnavailableErrorText" = "Movies are not available. An unknown error occurred";
+
+// MARK: - Movies
+// Movie related strings
+"movie.unknownMovieTitle" = "Unknown Title";
+
+// Movie genre titles
+"movie.genre.adventure" = "Adventure";
+"movie.genre.fantasy" = "Fantasy";
+"movie.genre.animation" = "Animation";
+"movie.genre.drama" = "Drama";
+"movie.genre.horror" = "Horror";
+"movie.genre.action" = "Action";
+"movie.genre.comedy" = "Comedy";
+"movie.genre.history" = "History";
+"movie.genre.western" = "Western";
+"movie.genre.thriller" = "Thriller";
+"movie.genre.crime" = "Crime";
+"movie.genre.documentary" = "Documentary";
+"movie.genre.sciFi" = "Science Fiction";
+"movie.genre.mystery" = "Mystery";
+"movie.genre.music" = "Music";
+"movie.genre.romance" = "Romance";
+"movie.genre.family" = "Family";
+"movie.genre.war" = "War";
+"movie.genre.tvMovie" = "TV Movie";
+
+// MARK: - Coming Soon tab (Dashboard)
+"comingSoon.searchBarPlaceholder" = "Search";
+"comingSoon.emptySearchListText" = "No movies found for \"%@\"";
+"comingSoon.failedToLoadComingSoonAlertTitle" = "Failed to load Coming Soon Movies";
+"comingSoon.failedToLoadComingSoonErrorText" = "Coming Soon Movies are not available. An unknown error occurred";
+
+// MARK: - Profile Screen
+"profile.screenTitle" = "Profile";
+"profile.memberViewText" = "Member";
+"profile.userFavoritesCountTitle" = "Favorite movies";
+"profile.logoutButtonTitle" = "Log Out";
+"profile.usernameNotFoundText" = "Unknown User";
+"profile.emailNotFoundText" = "No email provided";
+"profile.failedToLogoutAlertTitle" = "Log out Failed";
+"profile.logoutConfirmationAlertTitle" = "Leaving so soon?";
+"profile.logoutConfirmationAlertDescription" = "Are you sure you want to log out?\nYou will need to log back in to keep watching your favorite movies";
+"profile.clearCacheConfirmationAlertTitle" = "Clear App Cache?";
+"profile.clearCacheConfirmationAlertDescription" = "This will delete temporarily saved movies to free up space.\nDon't worry, your Favorites will remain safe";
+"profile.failedToClearCacheAlertTitle" = "Unable to Clear Cache";
+"profile.failedToClearCacheAlertDescription" = "An error occurred while attempting to clear the cache. Please try again later.";
+"profile.clearCacheButtonDefaultTitle" = "Clear Cache";
+"profile.clearCacheButtonSuccessfullyClearedTitle" = "Cleared";
+
+// MARK: - Movie Details Screen
+"movieDetails.movieDescriptionSectionTitle" = "Synopsis";
+"movieDetails.relatedMoviesSectionTitle" = "Related Movies";
+"movieDetails.infoSectionGenreTitle" = "Genre";
+"movieDetails.infoSectionReleaseDateTitle" = "Release date";
+"movieDetails.readMoreButtonText" = "Read more...";
+"movieDetails.hideMoreButtonText" = "Hide more...";
+"movieDetails.movieRuntimeText" = "%d minutes";
+"movieDetails.movieRuntimeNotFound" = "Not found";
+"movieDetails.movieRatingNotFound" = "No rating";
+"movieDetails.movieReleaseDateNotFound" = "Not found";
+"movieDetails.failedToLoadMoviesDetailsAlertTitle" = "Failed to load Movie Details";
+"movieDetails.failedToLoadMoviesDetailsErrorText" = "Movie Details are not available. An unknown error occurred";
+"movieDetails.failedToLoadRelatedMoviesAlertTitle" = "Failed to load Related Movies";
+"movieDetails.failedToLoadRelatedMoviesErrorText" = "Related Movies are not available. An unknown error occurred";
+
+// MARK: - Favourite Movies Screen
+"favourites.reloadButtonTitle" = "Reload";
+"favourites.fetchingFailedTitle" = "Movies not loaded";
+"favourites.fetchingFailedDescription" = "Something went wrong.\nPlease try again and reload page";
+"favourites.discoverMoviesButtonTitle" = "Discover Movies";
+"favourites.emptyFavouriteMoviesListTitle" = "No Favorites Yet";
+"favourites.emptyFavouriteMoviesListDescription" = "Explore the Coming Soon tab, select a movie you're interested in, and like it to add it to this page";
+
+// MARK: - ERRORS
+// MARK: - Firebase Error Strings
+"firebase.loginFailedAlertErrorTitle" = "Login Failed";
+"firebase.registerFailedAlertErrorTitle" = "Register Failed";
+"firebase.usernameNotSavedAlertErrorTitle" = "Username Not Saved";
+"firebase.unknownErrorText" = "An unexpected error occurred. Please try again";
+"firebase.emailAlreadyInUseErrorText" = "This email is already in use. Please log in or register with another email";
+"firebase.invalidCredentialErrorText" = "Invalid email or password. Please try again";
+"firebase.wrongPasswordErrorText" = "The password you entered is incorrect";
+"firebase.userNotFoundErrorText" = "Can't find an account with that email";
+"firebase.badNetworkErrorText" = "Network error. Please check your internet connection and try again";
+"firebase.userDataRetrieveFailedErrorText" = "Account created, but failed to retrieve user data";
+"firebase.usernameSetupFailedErrorText" = "Account created, but failed to save username. ";
+"firebase.failedToLogoutErrorText" = "Unable to clear your secure session. Please close the app and try again";
+
+// MARK: - Alamofire Error Strings
+"alamofire.failedToLoadMoviesAlertTitle" = "Failed to Load Movies";
+"alamofire.checkInternetConnectionError" = "Please check your internet connection and try again";
+"alamofire.authenticationError" = "Authentication error. Please sign out and sign in";
+"alamofire.failedWithErrorCode" = "The server returned an error (Code: %d). Please try again later";
+"alamofire.failedWithDecodingError" = "We are having trouble loading the movie data right now";
+"alamofire.unknownErrorOccured" = "An unknown network error occurred";
+
+// MARK: - Core Data Error Strings
+"coreData.commonErrorTitle" = "Something Went Wrong";
+"coreData.commonErrorDescription" = "We couldn't complete this action right now. Please give it another try!";
+"coreData.addToCoreDataFailedTitle" = "Failed to cache movie";
+"coreData.addToCoreDataFailedDescription" = "We couldn't save this movie lo local cache";
+"coreData.savingFailedAlertTitle" = "Save Failed";
+"coreData.savingFailedAlertDescription" = "We couldn't save this movie to your favorites. Please try again later";
+"coreData.fetchingFailedAlertTitle" = "Load Failed";
+"coreData.fetchingMoviesFailedAlertDescription" = "We couldn't load your favorite movies at this time. Please try again";
+"coreData.fetchingFavoriteMovieFailedAlertDescription" = "We couldn't load this movie at this time. Please try again";
+"coreData.deletionFailedAlertTitle" = "Removal Failed";
+"coreData.deletionFailedAlertDescription" = "We couldn't remove this movie from your favorites. Please try again later";
+"coreData.favoriteStatusCheckFailedAlertTitle" = "Couldn't Verify Status";
+"coreData.favoriteStatusCheckFailedAlertDescription" = "Could not verify if this movie is currently in your favorites";
